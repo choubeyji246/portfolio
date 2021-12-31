@@ -1,0 +1,288 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+nav a {
+  text-decoration: none;
+  color: blue;
+}
+nav a:hover {
+  color: orange;
+  border: 2px solid orange;
+}
+nav h1 {
+  color: blue;
+  font-size: 5vh;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 3px 5px rgba(255, 116, 2, 0.1);
+  z-index: 1;
+}
+hero p{
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+nav ul {
+  display: flex;
+  gap: 50px;
+}
+.burger-menu {
+  color: black;
+  font-size: 30px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: auto;
+  /* max-width: 68.75rem; */
+}
+.bio {
+  width: 500px;
+  padding: 0px 10px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px black;
+}
+section {
+  padding: 8px;
+
+}
+.more-about{
+  padding: 4px 5px;
+  /* background-color: paleturquoise; */
+  background: linear-gradient(rgb(186, 186, 214),rgb(236, 166, 166),rgb(186, 186, 214));
+}
+.more-about p{
+padding: 20px;
+}
+.more-about h2{
+text-align: center;
+}
+.skills{
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.skill-header{
+  margin-bottom: 1rem;
+}
+.skill-wrapper img{
+  padding: 1.25rem;
+}
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px black;
+  padding: 20px;
+  margin: 10px;
+}
+.projects{
+  margin-top: 2rem;
+  padding: 32px 0;
+}
+.project-pic {
+  width: 65%;
+  height: 60%;
+}
+.project-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-tittle{
+  margin-bottom: 2rem;
+  text-align: initial;
+}
+.project-header{
+  text-align: center;
+  padding: 24px;
+}
+.project-container p{
+  padding: 0 7px;
+}
+.project-card{
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px black;
+  padding: 20px;
+  margin: 10px;
+}
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px black;
+}
+.contact h2{
+  text-align: center;
+}
+.contact{
+  margin-top: 2rem;
+}
+.contact-form-container label{
+  color: blue;
+  line-height: 2.7em;
+  font-weight: bold;
+}
+.contact-form-container textarea{
+  min-height: 6.25rem;
+  font-size: 14px;
+}
+.contact-form-container .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset black;
+  font-size: 0.875rem;
+  outline: none;
+}
+.submit-btn{
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.submit-btn:hover{
+  background-color: blue;
+  cursor: pointer;
+}
+.social {
+  display: flex;
+  margin-top: 5px;
+}
+footer {
+ 
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
+nav img{
+  height: 100px;
+  border-radius: 2px solid black;
+}
+
+ @media screen and (max-width: 720px) {
+  /*changes reflects on screen with a width of 720px and below*/
+   nav {
+    padding: 1.5rem 1rem;
+  }
+  nav ul {
+    position: fixed;
+    background-color: black;
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+  
+   nav ul li {
+    margin: 8px;
+  }
+  .burger-menu {
+    display: block;
+  }
+  
+  nav ul.show {
+    transform: translateX(0);
+  }
+  .hero {
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .hero img {
+        height: 37.5rem;
+        width: 30rem;
+    }
+  
+  .bio {
+    margin-top: -7rem;
+    width: 20.5rem;
+  }
+  .more-about {
+    margin-top: 2rem;
+    padding: 1rem 3.5rem;
+  }
+  
+  .more-about h2 {
+    text-align: center;
+  }
+  
+  .more-about p {
+    text-align: justify;
+  }
+  .icon {
+    width: 5.875rem;
+    height: 5.25rem;
+  }
+  .projects-container {
+    flex-direction: column;
+  }
+  
+  .project-container {
+    width: 20.875rem;
+  }
+  .contact-form-container {
+    max-width: 23.75rem;
+  } 
+} 
+  /* @media screen and (max-width: 420px) {
+    .hero img {
+      height: 37.5rem;
+      width: 23rem;
+    }
+  
+    .bio {
+      width: 18.3rem;
+    }
+  
+    .project-container {
+      width: 17.875rem;
+    }
+  
+    .contact-form-container {
+      max-width: 17.75rem;
+    }
+  } 
+ */
